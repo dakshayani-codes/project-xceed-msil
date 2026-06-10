@@ -1,0 +1,9 @@
+path: /Users/dakshayani/Desktop/project-xceed-msil/datasets/final_dataset_ir_raw
+train: images/train
+val: images/val
+test: images/test
+names:
+- proper_belt
+- no_belt
+- clipped_behind
+- decoy

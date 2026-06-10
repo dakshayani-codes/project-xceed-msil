@@ -1,0 +1,99 @@
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+
+# ─── Virtual Environments ─────────────────────────────────────────────────────
+xceed-env/
+venv/
+env/
+.venv/
+
+# ─── Environment Variables ────────────────────────────────────────────────────
+.env
+.env.local
+
+# ─── Models ───────────────────────────────────────────────────────────────────
+*.pt
+*.pth
+*.pkl
+!models/yolov8n.pt
+!models/best_final.pt
+
+*.onnx
+!models/best320.onnx
+
+# ─── YOLO Training Outputs ────────────────────────────────────────────────────
+runs/
+*.cache
+datasets/**/*.cache
+
+# ─── Database ─────────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ─── Exclude Large Dataset Assets ─────────────────────────────────────────────
+datasets/final_dataset/images/
+datasets/final_dataset/labels/
+
+datasets/final_dataset_ir_raw/images/
+datasets/final_dataset_ir_raw/labels/
+
+datasets/final_dataset_ir_clahe/images/
+datasets/final_dataset_ir_clahe/labels/
+
+# ─── Archive Folder (Very Large) ──────────────────────────────────────────────
+archive/
+
+# ─── Demo Recordings ──────────────────────────────────────────────────────────
+# Ignore all recordings
+demo_recordings/*
+
+# Keep representative final demo
+!demo_recordings/05_full_demo/
+!demo_recordings/05_full_demo/output.mp4
+
+# ─── Media Outputs (Large Generated Videos) ───────────────────────────────────
+media/
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── macOS ────────────────────────────────────────────────────────────────────
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# ─── Windows ──────────────────────────────────────────────────────────────────
+Thumbs.db
+desktop.ini
+
+# ─── IDEs ─────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ─── Temporary Files ──────────────────────────────────────────────────────────
+*.tmp
+*.bak
+tmp/
+output/
+
+# ─── Keep Important Project Artifacts ─────────────────────────────────────────
+!README.md
+!requirements.txt
+!master.sh
+!reports/*.pdf
